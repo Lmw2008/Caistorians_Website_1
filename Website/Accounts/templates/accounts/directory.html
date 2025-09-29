@@ -19,19 +19,18 @@
             {% else %}
                 <div class="directory-no-img">No Photo</div>
             {% endif %}
-
         </div>
         <div class="directory-card-right">
             <p><strong>{{ alumni.username }}</strong></p>
             {% if alumni.graduation_year %}
-            <p>Class of {{ alumni.graduation_year }}</p>
+                <p>Class of {{ alumni.graduation_year }}</p>
             {% endif %}
             {% if alumni.occupation %}
-            <p>{{ alumni.occupation }}</p>
+                <p>{{ alumni.occupation }}</p>
             {% endif %}
         </div>
     </div>
-    </a>    
+</a>
 {% empty %}
     <p>No alumni found.</p>
 {% endfor %}
